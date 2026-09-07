@@ -1,0 +1,16 @@
+# Archivos temporales de R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Recursos intermedios generados al hacer Knit
+tutorial_rmarkdown_files/
+*_files/
+*_cache/
+
+# Archivos temporales de LaTeX (generados al exportar a PDF)
+*.log
+*.aux
+*.out
+*.toc
