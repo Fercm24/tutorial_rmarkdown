@@ -1,0 +1,54 @@
+---
+title: "Tutorial_RMarkdown"
+author: "Instructor"
+date: "`r Sys.Date()`"
+output:
+  word_document:
+    toc: true
+    toc_depth: '3'
+  pdf_document:
+    toc: true
+    toc_depth: '3'
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introducción
+
+Este ejemplo didáctico muestra cómo **integrar texto, código y resultados** en un único archivo reproducible usando *R Markdown*.
+
+### Objetivos
+
+- Importar y explorar el conjunto de datos `mtcars`.
+- Generar resúmenes numéricos y gráficos.
+
+## Insertar fragmentos de código (R code chunks) y ejecutarlos
+
+### Cargar la base de datos y explorar su estructura
+
+```{r}
+data(mtcars)
+str(mtcars)
+```
+
+### Realizar un resumen general de la base de datos
+
+```{r}
+summary(mtcars)
+```
+
+### Crear un gráfico sencillo
+
+```{r fig.width=6, fig.height=4}
+plot(mtcars$wt, mtcars$mpg,
+     main = "Relación entre peso (wt) y rendimiento (mpg)",
+     xlab = "Peso del vehículo",
+     ylab = "Millas por galón")
+```
