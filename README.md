@@ -16,7 +16,7 @@ tutorial_rmarkdown/
 │   ├── tutorial_rmarkdown.html
 │   ├── tutorial_rmarkdown.pdf
 │   └── tutorial_rmarkdown.docx
-├── figures/                    # Figuras 3 y 4
+├── figures/                    # Figuras S1 y S2
 └── tutorial_rmarkdown.Rproj    # Proyecto de RStudio
 ```
 
